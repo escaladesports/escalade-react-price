@@ -12,22 +12,21 @@ class Price extends React.Component {
 	}
 	componentDidMount(){
 		console.log('component mounted...')
-
 		this.store = getStore(this.props)
 
+		// Change component by event
 		this.store.addEvent(this.setPrice, {
 			id: this.props.id
 		})
 
+		// Change component if price is already set
 		let price = this.store.getFormattedPrice(this.props.id)
-
 		if(price !== undefined){
 			this.setPrice(price)
 		}
 	}
 	setPrice(price) {
 		console.log(`Setting price to ${price}`)
-
 		if (price) {
 			if (price === 'undefined') {
 				return this.setState({ display: this.props.unavailable })

@@ -11,7 +11,6 @@ render(
 		id='asdf'
 		unavailable='Unavailable'
 		loading='Loading...'
-		cookies={false}
 		verbose
 	/>,
 	containerEl

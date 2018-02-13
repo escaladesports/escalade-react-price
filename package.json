@@ -27,6 +27,9 @@
     "react-dom": "^16.1.1"
   },
   "dependencies": {
+    "escalade-price-store": "1.0.9",
+    "fetch-retry": "^1.1.1",
+    "js-cookie": "^2.2.0",
     "styled-jsx": "^2.2.4"
   }
 }

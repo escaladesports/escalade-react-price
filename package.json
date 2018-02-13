@@ -10,7 +10,7 @@
   "author": "Kennedy Rose <krose@escaladesports.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/escaladesports/react-component-boilerplate.git"
+    "url": "https://github.com/escaladesports/escalade-react-price.git"
   },
   "license": "MIT",
   "scripts": {

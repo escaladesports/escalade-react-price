@@ -15,13 +15,13 @@
   "license": "MIT",
   "scripts": {
     "analyze": "esca-scripts analyze --react --component --input ./src/index.js",
-    "build": "esca-scripts build --react --component --babel --input ./src/index.js --output ./dist/index.js",
+    "build": "esca-scripts build --react --component --babel --input ./src --output ./dist --multiple",
     "dev": "esca-scripts dev ---input './dev/dev.js, ./dev/index.html' --react --browser",
     "prepublishOnly": "npm run build",
     "reset": "esca-scripts reset"
   },
   "devDependencies": {
-    "esca-scripts": "^0.12.1",
+    "esca-scripts": "^0.13.4",
     "opn-cli": "^3.1.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1"

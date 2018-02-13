@@ -1,9 +1,16 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Price from '../src/price'
+import { Price } from '../src'
 
-const containerEl = document.createElement('div')
+let containerEl = document.createElement('div')
 document.body.appendChild(containerEl)
+
+//console.log('main:', main)
+console.log('Price:', Price)
+//console.log('prefetchPrices:', prefetchPrices)
+
+/*
+prefetchPrices('goalrilla', ['asdf'])
 
 render(
 	<Price
@@ -11,7 +18,9 @@ render(
 		id='asdf'
 		unavailable='Unavailable'
 		loading='Loading...'
+		cookies={false}
 		verbose
 	/>,
 	containerEl
 )
+*/

@@ -44,7 +44,6 @@ class Price extends React.Component {
 Price.defaultProps = {
 	loading: '',
 	unavailable: '',
-	site: process.env.SITE_ID || process.env.GATSBY_SITE_ID,
 }
 
 export default Price

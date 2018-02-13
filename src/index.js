@@ -1,5 +1,9 @@
 import Price from './price'
+import prefetchPrices from './stores'
 
-export default {
-	Price,
+const obj = {
+	Price: Price,
+	prefetchPrices: prefetchPrices,
 }
+
+export default obj

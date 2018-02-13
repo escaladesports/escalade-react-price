@@ -11,7 +11,6 @@ class Price extends React.Component {
 		this.setPrice = this.setPrice.bind(this)
 	}
 	componentDidMount(){
-		console.log('component mounted...')
 		this.store = getStore(this.props)
 
 		// Change component by event
@@ -26,7 +25,6 @@ class Price extends React.Component {
 		}
 	}
 	setPrice(price) {
-		console.log(`Setting price to ${price}`)
 		if (price) {
 			if (price === 'undefined') {
 				return this.setState({ display: this.props.unavailable })

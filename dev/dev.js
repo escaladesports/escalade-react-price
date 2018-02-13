@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Price, { prefetchPrices } from '../src'
+import { Price, prefetchPrices } from '../src'
 
 let containerEl = document.createElement('div')
 document.body.appendChild(containerEl)

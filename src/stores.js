@@ -16,6 +16,9 @@ function getStore(options, ids) {
 	if (!(options.site in stores)) {
 		stores[options.site] = new Store(options)
 	}
+	else if(options.ids){
+		stores[options.site].addIds(options.ids)
+	}
 	return stores[options.site]
 }
 

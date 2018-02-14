@@ -10,7 +10,7 @@ prefetchPrices('goalrilla', ['asdf'])
 render(
 	<Price
 		site='goalrilla'
-		id='asdf'
+		id='b6101w'
 		unavailable='Unavailable'
 		loading='Loading...'
 		cookies={false}

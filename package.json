@@ -1,6 +1,6 @@
 {
   "name": "escalade-react-price",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
     "react",
     "component",
@@ -18,7 +18,7 @@
     "build": "esca-scripts build --react --component --babel --input ./src --output ./dist --multiple",
     "dev": "esca-scripts dev ---input './dev/dev.js, ./dev/index.html' --react --browser --component",
     "prepublishOnly": "npm run build",
-	 "travis": "opn https://travis-ci.org/escaladesports/escalade-react-price/branches",
+    "travis": "opn https://travis-ci.org/escaladesports/escalade-react-price/branches",
     "reset": "esca-scripts reset"
   },
   "devDependencies": {

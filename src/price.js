@@ -29,11 +29,13 @@ class Price extends React.Component {
 		if (price) {
 			if (price === 'undefined') {
 				return this.setState({
-					display: this.props.unavailable,
-					unformatted
+					display: this.props.unavailable
 				})
 			}
-			return this.setState({ display: price })
+			return this.setState({
+				display: price,
+				unformatted
+			})
 		}
 	}
 	render(){

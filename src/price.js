@@ -21,13 +21,17 @@ class Price extends React.Component {
 		// Change component if price is already set
 		let price = this.store.getFormattedPrice(this.props.id)
 		if(price !== undefined){
-			this.setPrice(price)
+			let unformatted = this.store.getPrice(this.props.id)
+			this.setPrice(price, unformatted)
 		}
 	}
-	setPrice(price) {
+	setPrice(price, unformatted) {
 		if (price) {
 			if (price === 'undefined') {
-				return this.setState({ display: this.props.unavailable })
+				return this.setState({
+					display: this.props.unavailable,
+					unformatted
+				})
 			}
 			return this.setState({ display: price })
 		}

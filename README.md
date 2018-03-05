@@ -26,6 +26,13 @@ import { Price } from 'escalade-react-price'
 ...
 
 <Price id='AT86A06455R' site='bear' />
+
+{/* Or iwth render prop */}
+
+<Price id='AT86A06455R' site='bear'>{price => {
+	return <div>{price}</div>
+}}</Price>
+
 ```
 
 ## Prefetch Prices

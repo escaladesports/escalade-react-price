@@ -40,7 +40,7 @@ class Price extends React.Component {
 		return (
 			<div>
 				{this.props.children &&
-					this.props.children(this.state.display)
+					this.props.children(this.state.display, this.state.unformatted)
 				}
 				{!this.props.children &&
 					this.state.display
